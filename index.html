@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+</head>
+<body>
+    
+
+    <h1>start Events DOM</h1>
+
+    <button onclick="console.log(7)">Click me</button>
+    <button onclick="console.log(61)">Anthore Button</button>
+    <button onclick="console.log('click the button')">Third Button</button>
+
+    <button onclick="MakeRed()">Make Red</button>
+    <input type="text" name="" id="">
+
+    <br>
+    <button onclick="MakeYellow()">Make Yeallow</button>
+
+    <br>
+    <button id="green_button">Green</button>
+    <script>
+
+     const greenButton = document.getElementById("green_button").addEventListener("click", function greenmake () {
+        document.body.style.backgroundColor = "green"
+     })
+    </script>
+    <script src="js/events.js"></script>
+</body>
+</html>
