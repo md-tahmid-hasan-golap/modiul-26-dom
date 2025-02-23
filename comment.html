@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Box </title>
+    <style>
+        body{
+            background-color: bisque;
+            
+
+        }
+        .comment{
+            background-color: black;
+            color: white;
+            padding: 30px;
+            margin:  10px;
+            border:  2px solid red;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>My Comment Box</h1>
+
+        <section>
+            <h3>owsome comment section</h3>
+
+            <div id="prents_div">
+                <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus in veritatis sapiente maiores voluptatum nisi blanditiis repellendus aut facere, eius dignissimos, ab iste! Quidem cupiditate culpa, facere saepe doloremque dolor libero ipsam veniam, iste minima quo quos perspiciatis. Necessitatibus odio beatae totam natus nesciunt itaque sit quis est suscipit?</p>
+
+                <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus in veritatis sapiente maiores voluptatum nisi blanditiis repellendus aut facere, eius dignissimos, ab iste! Quidem cupiditate culpa, facere saepe doloremque dolor libero ipsam veniam, iste minima quo quos perspiciatis. Necessitatibus odio beatae totam natus nesciunt itaque sit quis est suscipit?</p>
+
+                <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus in veritatis sapiente maiores voluptatum nisi blanditiis repellendus aut facere, eius dignissimos, ab iste! Quidem cupiditate culpa, facere saepe doloremque dolor libero ipsam veniam, iste minima quo quos perspiciatis. Necessitatibus odio beatae totam natus nesciunt itaque sit quis est suscipit?</p>
+            </div>
+            <textarea name="" id="text_area" cols="60" rows="5"></textarea>
+            <br>
+            <button id="post_button">post</button>
+        </section>
+    </main>
+    
+
+    <script>
+        // step number --- 1
+        document.getElementById("post_button").addEventListener("click", function(){
+           
+            // step number --- 2
+            const textArea = document.getElementById("text_area");
+            const textArea2 = textArea.value;
+
+            // step number --- 3
+          const parents = document.getElementById("prents_div")
+
+      // step number --- 4
+
+      const newElement = document.createElement("p");
+      newElement.classList.add("comment")
+      newElement.innerText = textArea2
+          
+            // step number --- 5
+            parents.appendChild(newElement)
+
+        })
+    </script>
+</body>
+</html>

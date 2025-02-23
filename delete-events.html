@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete events </title>
+</head>
+<body>
+    <h1>My cerect info</h1>
+    <input id="text_area" type="text" placeholder="Your Name">
+    <button id="btn_delete" disabled>Delete</button>
+
+    <script>
+        document.getElementById("text_area").addEventListener("keyup", function(events){
+            const text = events.target.value;
+            const btnDelete = document.getElementById("btn_delete")
+            if(text === "delete"){
+                console.log("Delete Types");
+                btnDelete.removeAttribute("disabled")
+            }
+            else{
+                console.log("Somthinks Else")
+                btnDelete.setAttribute("disabled", true)
+            }
+        })
+    </script>
+    
+</body>
+</html>
