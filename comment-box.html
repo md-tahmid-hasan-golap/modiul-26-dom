@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment - Boxh2</title>
+
+    <style>
+        .comment{
+            border:  1px solid white;
+            background-color: black;
+            color: white;
+            padding:  20px;
+            margin: 10px;
+            border-radius:  10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>My owsome comment Box</h2>
+
+    <section>
+        <h3>All comment here</h3>
+        <div id="prents_div">
+            <p class="comment">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum temporibus quaerat iste illum numquam odit sint atque commodi eos fuga. Veritatis quaerat eaque explicabo aut aliquid earum dicta accusamus nobis!</p>
+            <p class="comment">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum temporibus quaerat iste illum numquam odit sint atque commodi eos fuga. Veritatis quaerat eaque explicabo aut aliquid earum dicta accusamus nobis!</p>
+            <p class="comment">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum temporibus quaerat iste illum numquam odit sint atque commodi eos fuga. Veritatis quaerat eaque explicabo aut aliquid earum dicta accusamus nobis!</p>
+        </div>
+
+        <textarea name=""  id="text_area" cols="60" rows="5"></textarea>
+        <br>
+        <button id="post_button">post comment</button>
+    </section>
+    <script>
+         // stem - 1
+  document.getElementById("post_button").addEventListener("click", function(){
+          
+    // stem - 2
+
+  const textArea = document.getElementById("text_area")
+    const area = textArea.value
+       // stem - 3
+     const prentsDiv = document.getElementById("prents_div");
+     // step - 4
+     const newCommentElement = document.createElement("p");
+     newCommentElement.classList.add('Comment')
+     newCommentElement.innerText = area
+
+       // step - 5
+       prentsDiv.appendChild(newCommentElement)
+  })
+    </script>
+</body>
+</html>
