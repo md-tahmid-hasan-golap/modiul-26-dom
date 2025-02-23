@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=dubble.js, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            border: 2px solid green;
+            margin: 2p;
+        }
+        section{
+            border: 2px solid yellow;
+            margin: 2px;
+        }
+        ol{
+            border: 2px solid blue;
+            margin: 2px;
+        }
+        li{
+            border: 2px solid aquamarine;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>explore events doubble</h1>
+    <section>
+        <h2>list of things</h2>
+        <ol id="item-list">        
+        
+        <li id="item-1">Lorem, ipsum.</li>
+        <li id="item-2">Lorem, ipsum.</li>
+        <li id="item-3">Lorem, ipsum.</li>
+        <li id="item-4">Lorem, ipsum.</li>
+        <li id="item-5">Lorem, ipsum.</li>
+        <li id="item-6">Lorem, ipsum.</li>
+       
+        
+
+           
+        </ol>
+    </section>
+
+    <script>
+         document.getElementById("item-2").addEventListener("click", function(){
+            console.log("item addeing")
+         })
+         document.getElementById("item-list").addEventListener("click", function(){
+            console.log("item list")
+         })
+    </script>
+</body>
+</html>

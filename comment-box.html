@@ -3,52 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comment - Boxh2</title>
-
+    <title>commet box</title>
     <style>
         .comment{
-            border:  1px solid white;
             background-color: black;
             color: white;
-            padding:  20px;
+            padding: 20px;
             margin: 10px;
-            border-radius:  10px;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <h2>My owsome comment Box</h2>
+
+    <h1>comment box</h1>
 
     <section>
-        <h3>All comment here</h3>
-        <div id="prents_div">
-            <p class="comment">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum temporibus quaerat iste illum numquam odit sint atque commodi eos fuga. Veritatis quaerat eaque explicabo aut aliquid earum dicta accusamus nobis!</p>
-            <p class="comment">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum temporibus quaerat iste illum numquam odit sint atque commodi eos fuga. Veritatis quaerat eaque explicabo aut aliquid earum dicta accusamus nobis!</p>
-            <p class="comment">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum temporibus quaerat iste illum numquam odit sint atque commodi eos fuga. Veritatis quaerat eaque explicabo aut aliquid earum dicta accusamus nobis!</p>
+        <h2>my owsome comment</h2>
+        <div id="parents_div">
+            <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi modi, facilis et deleniti qui rem ex, soluta eius sunt explicabo labore eaque consectetur debitis excepturi, consequatur illum? Porro, qui!</p>
+            <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi modi, facilis et deleniti qui rem ex, soluta eius sunt explicabo labore eaque consectetur debitis excepturi, consequatur illum? Porro, qui!</p>
+            <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi modi, facilis et deleniti qui rem ex, soluta eius sunt explicabo labore eaque consectetur debitis excepturi, consequatur illum? Porro, qui!</p>
+
         </div>
 
-        <textarea name=""  id="text_area" cols="60" rows="5"></textarea>
+        <textarea name="" id="text_area" cols="60" rows="5"></textarea>
         <br>
-        <button id="post_button">post comment</button>
+        <button id="commet_button">comment click</button>
     </section>
+    
+
     <script>
-         // stem - 1
-  document.getElementById("post_button").addEventListener("click", function(){
-          
-    // stem - 2
 
-  const textArea = document.getElementById("text_area")
-    const area = textArea.value
-       // stem - 3
-     const prentsDiv = document.getElementById("prents_div");
-     // step - 4
-     const newCommentElement = document.createElement("p");
-     newCommentElement.classList.add('Comment')
-     newCommentElement.innerText = area
+        // step --- 1
+        document.getElementById("commet_button").addEventListener("click", function(){
+           
+        })
 
-       // step - 5
-       prentsDiv.appendChild(newCommentElement)
-  })
+        // step --- 2
+        const textArea = document.getElementById("text_area");
+        const area = textArea.value
+
+            // step --- 3  
+            const parent =  document.getElementById("parents_div")
+
+            // step --- 4
+
+            const nweElement = document.createElement("p");
+            // nweElement.classList.add('comment')
+            nweElement.innerText = area
+
+             // step --- 5
+
+             parent.appendChild(nweElement)
+            // textArea.value = "";
+
+
+
+
     </script>
 </body>
 </html>

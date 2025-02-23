@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prestice kortechi</title>
+</head>
+<body>
+    
+
+    <main>
+        <h1 id="heading">Whats Your name</h1>
+        <button id="click_button">Click Me</button>
+    </main>
+
+    <script>
+        document.getElementById("click_button").addEventListener("click", function(){
+            document.body.style.backgroundColor = "red";
+            const head = document.getElementById("heading");
+            head.innerText = "My Name Is GOLAP"
+
+        })
+    </script>
+</body>
+</html>
