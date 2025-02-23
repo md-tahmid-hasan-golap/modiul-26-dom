@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+        <!-- <h1 id="heading">Whats Your Name</h1>
+        <p id="paragraph">This is a paragraph</p>
+        <button id="change_item">change item</button> -->
+
+        <br>
+        <br>
+
+        <p id="name">No User</p>
+
+        <input id="input_name" placeholder="Your Name" type="text" name="" id="">
+        <button id="btn_update">Update</button>
+    </main>
+    <script>
+       document.getElementById("btn_update").addEventListener("click", function(){
+
+        const  inputName =  document.getElementById("input_name");
+        const name = inputName.value;
+        console.log("name", name);
+        const nameP = document.getElementById("name");
+        nameP.innerText = name
+       })
+        
+    </script>
+    <script src="js/change.js"></script>
+    
+</body>
+</html>

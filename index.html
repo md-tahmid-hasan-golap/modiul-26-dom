@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Events</title>
+    <title>Document</title>
 </head>
 <body>
     
 
-    <h1>start Events DOM</h1>
+    <main>
+        <button onclick="console.log(12)">click me</button>
+        <button onclick="console.log('click me')">click me</button>
 
-    <button onclick="console.log(7)">Click me</button>
-    <button onclick="console.log(61)">Anthore Button</button>
-    <button onclick="console.log('click the button')">Third Button</button>
+        <br>
+        <button onclick="makeyellow()">clicked</button>
 
-    <button onclick="MakeRed()">Make Red</button>
-    <input type="text" name="" id="">
+        <br>
+        <button onclick="yellow()">ON</button>
+   <p id="pre">How are You</p>
+   <br>
+        <button id="golap">click</button>
+        <br>
+        <button id="used">Used</button>
+    </main>
+  <script>
+   function makeyellow (){
+    document.body.style.backgroundColor = "red"
+   }
+  document.getElementById("golap").addEventListener("click", function(){
+    // document.body.style.backgroundColor = "red"
+    const prragraph = document.getElementById("pre")
+    prragraph.innerText = "clicked me"
 
-    <br>
-    <button onclick="MakeYellow()">Make Yeallow</button>
 
-    <br>
-    <button id="green_button">Green</button>
-    <script>
-
-     const greenButton = document.getElementById("green_button").addEventListener("click", function greenmake () {
-        document.body.style.backgroundColor = "green"
-     })
-    </script>
+  })
+  </script>
     <script src="js/events.js"></script>
 </body>
 </html>

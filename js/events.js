@@ -1,10 +1,11 @@
-console.log("evens Dom")
+// console.log("Events java scripts")
 
-// option - 
-
-function MakeYellow(){
+function yellow (){
     document.body.style.backgroundColor = "yellow"
-   }
-   function MakeRed (){
-    document.body.style.backgroundColor = "red"
-   }
+}
+
+document.getElementById("used").addEventListener("click", function(){
+    document.body.style.backgroundColor = "black";
+    const prea = document.getElementById("pre");
+    prea.innerText = "press"
+})
